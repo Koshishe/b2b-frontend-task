@@ -1,0 +1,14 @@
+@import "src/styles/index";
+
+.title {
+  @include t5;
+
+  text-transform: uppercase;
+  color: $text-gray;
+}
+
+.description {
+  @include t6;
+
+  color: $text-color;
+}

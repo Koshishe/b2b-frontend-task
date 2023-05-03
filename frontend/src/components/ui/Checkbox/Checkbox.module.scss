@@ -1,0 +1,38 @@
+@import "src/styles/index";
+
+.button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  margin-right: $gap-10;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid $navy-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkIcon {
+  visibility: hidden;
+}
+
+.active {
+  border-color: $blue;
+
+  & > .checkIcon {
+    visibility: visible;
+  }
+}
+
+.text {
+  @include t3;
+
+  color: $text-color;
+}

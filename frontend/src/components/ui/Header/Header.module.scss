@@ -1,0 +1,12 @@
+@import "src/styles/index";
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: $gap-50;
+
+  @include tablet {
+    padding-bottom: $gap-20;
+  }
+}

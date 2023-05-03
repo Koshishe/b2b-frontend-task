@@ -1,0 +1,59 @@
+// Colors
+$background-color: #f3f7fa;
+$border-color: #dfe5ec;
+$text-gray: #a0b0b9;
+$text-color: #4a4a4a;
+$white: #fff;
+$blue: #2196f3;
+$navy-blue: #9abbce;
+$light-blue: #f1fcff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+// Sizes
+$container-width: 960px;
+
+// Gaps
+$gap-50: 50px;
+$gap-20: 20px;
+$gap-15: 15px;
+$gap-10: 10px;
+
+// Fonts
+$font-weight-bold: 600;
+$font-weight-normal: 400;
+$font-size-xl: 24px;
+$font-size-l: 14px;
+$font-size-m: 13px;
+$font-size-s: 12px;
+$line-height-xl: 24px;
+$line-height-l: 21px;
+$line-height-m: 20px;
+$line-height-s: 18px;
+$line-height-xs: 12px;
+
+// Animations
+$rotate: rotate 2s ease-in-out infinite;
+$dash: dash 1.5s ease-in-out infinite;
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1,150;
+    stroke-dashoffset: 0
+  }
+
+  50% {
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: -35
+  }
+
+  100% {
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: -124
+  }
+}

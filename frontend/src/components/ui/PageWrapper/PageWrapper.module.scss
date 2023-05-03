@@ -1,0 +1,19 @@
+@import "src/styles/index";
+
+.wrapper {
+  background-color: $background-color;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: $container-width;
+  padding: $gap-50;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include tablet {
+    padding: $gap-20;
+  }
+}

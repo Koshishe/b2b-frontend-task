@@ -1,0 +1,14 @@
+@import "src/styles/index";
+
+.showMore {
+  @include t6;
+
+  width: 100%;
+  background-color: $blue;
+  padding: $gap-15 $gap-20;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 5px;
+  margin-top: $gap-20;
+  cursor: pointer;
+}

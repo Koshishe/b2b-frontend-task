@@ -1,0 +1,24 @@
+@import "src/styles/index";
+
+.root {
+  padding: $gap-20 0 $gap-10;
+  background-color: $white;
+  box-shadow: 0 2px 8px $shadow-color;
+  border-radius: 5px;
+}
+
+.title {
+  @include t4;
+
+  padding: 0 $gap-20 $gap-10;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.checkbox {
+  padding: $gap-10 $gap-20;
+
+  &:hover {
+    background-color: $light-blue;
+  }
+}

@@ -1,0 +1,56 @@
+@import "src/styles/index";
+
+.root {
+  padding: $gap-20;
+  background: $white;
+  box-shadow: 0 2px 8px $shadow-color;
+  border-radius: 5px;
+  margin-top: $gap-20;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $gap-20;
+}
+
+.price {
+  @include t1;
+
+  color: $blue;
+}
+
+.carrier {
+  height: 36px;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.segments {
+  @include mobile {
+    display: flex;
+    gap: $gap-20;
+  }
+}
+
+.segment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $gap-20;
+
+  &:not(:last-child) {
+    margin-bottom: $gap-20;
+  }
+
+  @include mobile {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
